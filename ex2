@@ -1,0 +1,23 @@
+public class EX2 {
+    public static void main(String[] args) {
+
+        double vet[] = new double[3];
+         vet[0] = 1995;
+                 vet[1] = 1000;
+                         vet[2] = 0.015;
+
+        System.out.println("No ano de "+vet[0]+" o salario é de "+vet[1]+" reais");
+
+
+        do{
+            vet[1] = vet[1] + (vet[1]*vet[2]);
+            vet[0] = vet[0]+1;
+            System.out.println("No ano de "+vet[0]+" o aumento foi de "+vet[2]+" , o salario é de "+vet[1]+" reais");
+            vet[2] = vet[2] * 2;
+        }
+        while(vet[0]!=2022);
+
+    }
+}
+
+//     1 ANO -  2 SALARIO  -  3 AUMENT
