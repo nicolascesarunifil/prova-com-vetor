@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class EX3 {
+        public static void main(String[] args) {
+
+            Scanner scanner = new Scanner(System.in);
+            double vet[] = new double[3];
+
+            System.out.println("digite a massa do material altamente radioativo em gramas");
+            vet[0] = scanner.nextDouble();
+            vet[1] = vet[0];
+            do {
+                vet[2] = vet[2] + 50;
+                vet[1] = vet[1] / 2;
+                System.out.println(vet[2]);
+            }
+            while (vet[1] > 0.5);
+
+            System.out.println("massa inicial->" + vet[0]);
+            System.out.println("massa final->" + vet[1]);
+            System.out.println("tempo em horas---->"+vet[2]/3600);
+            System.out.println("tempo em minutos-->"+vet[2]/60);
+            System.out.println("tempo em segundos->"+vet[2]);
+        }
+    }
+
